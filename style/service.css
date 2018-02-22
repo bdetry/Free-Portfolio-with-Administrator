@@ -1,0 +1,203 @@
+@charset "UTF-8";
+
+html
+{
+    font-size: 62.5%;
+}
+
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+body
+{
+    margin: 0;
+    background-color: #eee;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    min-height: 100vh;
+}
+
+nav
+{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+nav a
+{
+    font-size: 2rem;
+    font-family: 'Roboto', sans-serif;
+    display: block;
+    width: 100%;
+    padding-top: 3vh;
+    padding-bottom: 3vh;
+    text-align: center;
+    background-color: #e02828;
+    color: #441010;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+nav a:hover
+{    
+    background-color: #e23d3d;
+}
+
+.goBack
+{
+    border: solid 1px #777;
+    margin-top: 5px;
+    margin-left: 10px;
+   border-radius: 5px;
+    font-family: 'Roboto', sans-serif;
+    font-size: 2rem;
+    font-weight: bold;
+    color: #777;
+    align-self: flex-start;
+}
+
+.goBack a
+{
+    text-decoration: none; padding: 10px;
+    display: block;
+    width: 100%;
+   border-radius: 5px;
+    color: #777;
+}
+
+.goBack a:hover
+{
+    background-color: #fff;
+}
+
+.newService
+{
+   width: 50%;    
+   border: dotted 5px #999;
+   text-align: center;
+   padding: 5px;
+}
+
+.newService form
+{
+   display: flex;
+   flex-direction: row;
+   width: 100%;
+}
+
+.newService form input , textarea
+{
+   width: 100%;
+   padding: 10px;
+   margin: 3px;
+}
+
+.newService div:nth-of-type(1)
+{
+   width: 30%;
+   background-color: #666;
+}
+
+.newService div:nth-of-type(2)
+{
+   width: 59%;
+}
+
+
+.adminBar
+{
+    position: fixed;
+    width: 100%;
+    height: 30px;
+    background-color: #999;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    opacity: 0.5;
+}
+
+.adminBar a
+{
+    line-height: 30px;
+    text-decoration: none;
+    color: #333;
+    font-size: 1.5rem;
+    margin: 10px;
+    box-sizing: border-box;
+}
+
+main
+{
+   width: 70%;
+   display: flex;
+   flex-direction: column;
+   justify-content: flex-start;
+   align-items: center;
+}
+
+main article
+{
+   width: 100%;
+   display: flex;
+   flex-direction: row;
+   margin-top: 2vh;
+   border-top: solid 1px #e02828;
+}
+
+main article div:nth-of-type(1)  /* IMG */
+{
+   width: 30%;
+}
+
+main article div:nth-of-type(1) img
+{
+   width: 100%;
+   box-sizing: border-box;
+   padding: 20px;
+}
+
+main article div:nth-of-type(2)  /* INFO */
+{
+   width: 69%;
+   padding: 20px;
+}
+
+main article div:nth-of-type(2) h3
+{
+   padding: 5px;
+   font-size: 2.7rem;   
+    font-family: 'Roboto', sans-serif;
+   color: #333;
+}
+
+main article div:nth-of-type(2) p
+{
+   padding: 5px;
+   font-size: 2rem;   
+    font-family: 'Roboto', sans-serif;
+    text-align: justify;
+   color: #666;
+}
+
+.delService
+{
+   width: 20%;
+   padding: 5px;
+   border: dotted 5px #999;
+   margin-top: 10px;
+}
+
+.delService form input , select
+{
+   width: 100%;
+   padding: 10px;
+   margin: 3px;
+}

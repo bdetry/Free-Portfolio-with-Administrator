@@ -1,0 +1,335 @@
+@charset "UTF-8";
+
+html
+{
+    font-size: 62.5%;
+}
+
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+body
+{
+    margin: 0;
+    background-color: #eee;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    min-height: 100vh;
+}
+
+main
+{
+    width: 75%;
+    padding-top: 10vh;
+    padding-bottom: 5vh;
+}
+
+.adminBar
+{
+    position: fixed;
+    width: 100%;
+    height: 30px;
+    background-color: #999;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    opacity: 0.5;
+}
+
+.adminBar a
+{
+    line-height: 30px;
+    text-decoration: none;
+    color: #333;
+    font-size: 1.5rem;
+    margin: 10px;
+    box-sizing: border-box;
+}
+
+main article:nth-of-type(1)
+{
+    width: 100%;
+    padding-top: 10px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+main article:nth-of-type(1) figure
+{
+    width: 30%;
+    padding: 10px;
+}
+
+main article:nth-of-type(1) figure img
+{
+    width: 90%;
+    display: block;
+    margin: auto;
+    box-shadow: 5px 5px 30px #666;
+}
+
+main article:nth-of-type(1) #containInfo
+{    
+    width: 70%;
+}
+
+main article:nth-of-type(1) div:nth-child(1) /* TITRE */
+{
+    width: 100%;
+    font-size: 3rem;
+    padding: 5px;
+    font-weight: bold;
+    font-family: 'Roboto', sans-serif;
+    color: #e02828;
+    text-shadow: 5px 5px 30px #666;
+}
+main article:nth-of-type(1) div:nth-child(2) /* DESCRIP */
+{
+    width: 100%;
+    padding: 3px;
+    font-size: 2.1rem;
+    font-family: 'Roboto', sans-serif;
+    text-align: justify;
+    color: #333;
+    text-shadow: 5px 5px 30px #999;
+}
+
+main article:nth-of-type(1) div:nth-child(3) /* EXTRA */
+{
+    width: 100%;
+    padding: 5px;
+    font-size: 2rem;
+    font-family: 'Roboto', sans-serif;
+    color: #c94242;
+    text-align: right;
+    text-shadow: 5px 5px 30px #999;
+}
+
+.newInfoAdmin
+{
+    width: 70%;
+    border: dotted 5px #999;
+    border-radius: 7px;
+    box-sizing: border-box;
+    padding: 10px;
+    text-align: center;
+}
+
+.newInfoAdmin form
+{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+}
+
+.newInfoAdmin form input , textarea
+{
+    padding: 10px;
+    margin-top: 2px;
+}
+
+
+.newInfoAdmin div:nth-of-type(1)
+{
+    width: 30%;
+    background-color: #999;
+    box-sizing: border-box;
+    margin: 10px;
+}
+
+.newInfoAdmin div:nth-of-type(2)
+{
+    width: 70%;
+}
+
+nav
+{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    margin-top: 5vh;
+}
+
+.separateur
+{
+    width: 100%;
+    height: 2px;
+    background-color: #ccc;
+    border-radius: 50%;
+    box-shadow: 5px 5px 40px #666;
+    display: none;
+}
+
+nav a
+{
+    font-size: 2rem;
+    font-family: 'Roboto', sans-serif;
+    display: block;
+    width: 100%;
+    padding-top: 3vh;
+    padding-bottom: 3vh;
+    text-align: center;
+    background-color: #e02828;
+    color: #441010;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+nav a:hover
+{    
+    background-color: #e23d3d;
+}
+
+.linkCotainer
+{
+    margin-top: 3vh;
+    margin-bottom: 3vh;
+    width: 100%;
+    height: 12vh;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.linkCotainer a
+{
+    width: 70px;
+    height: 70px;
+    border: solid 1px #ccc;
+    margin: 10px;
+    box-sizing: border-box;
+    border-radius: 5px;
+    background-size: cover;
+}
+
+.linkCotainer a:hover
+{
+    background-color: #fff;
+    width: 73px;
+    height: 73px;
+}
+
+.adminLinks
+{
+    width: 70%;    
+    border: dotted 5px #999;
+    margin-bottom: 10vh;
+    border-radius: 5px;
+    display: flex;
+    flex-direction: row;
+}
+
+.adminLinks div:nth-of-type(1)
+{
+    width: 20%;
+    padding: 10px;
+    box-sizing: border-box;
+    border-right: dotted #999;
+}
+
+.adminLinks div:nth-of-type(1) form input , select
+{
+    width: 100%;
+    padding: 5px;
+}
+
+.adminLinks div:nth-of-type(2) form input , select
+{
+    width: 100%;
+    padding: 5px;
+    margin-top: 2px;
+}
+
+.adminLinks div:nth-of-type(2)
+{
+    width: 79%;
+}
+
+@media all and (max-width: 980px)
+{
+    main
+    {
+        width: 80%;
+    }
+}
+
+@media all and (max-width: 770px)
+{
+    body
+    {
+        min-height:inherit;
+    }
+    
+    main
+    {
+        width: 80%;
+    }
+}
+
+@media all and (max-width: 600px)
+{
+    main
+    {
+        width: 90%;
+    }
+    
+    main article:nth-of-type(1) #containInfo
+    {
+        width: 90%;
+    }
+    
+    main article:nth-of-type(1)
+    {
+        width: 100%;
+        height: 100%;
+        padding-top: 10px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    main article:nth-of-type(1) figure
+    {
+        width: 80%;
+        padding: 10px;
+    }
+    
+    main article:nth-of-type(1) figure img
+    {
+        width: 100%;
+    }
+    
+    .linkCotainer a
+    {
+        width: 60px;
+        height: 60px;
+        margin-top: 5vh;
+    }
+    
+    .linkCotainer a:hover
+    {
+        width: 63px;
+        height: 63px;
+    }
+}
+
+@media all and (max-width: 460px)
+{
+    nav a
+    {
+        font-size: 1.5rem;
+    }
+}
+
+
+
