@@ -201,3 +201,22 @@ main article div:nth-of-type(2) p
    padding: 10px;
    margin: 3px;
 }
+
+
+@media all and (max-width:800px)
+{
+   main article
+   {
+      flex-direction: column;
+   }
+   
+   main article div:nth-of-type(1)  /* IMG */
+   {
+      width: 100%;
+   }
+   
+   main article div:nth-of-type(2)
+   {
+      width: 100%;
+   }
+}
